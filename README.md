@@ -13,7 +13,7 @@ Generate Grid for user photos
     npm start
     ```
 
-## Note: Test cases and docket image could not be implemented due to the short time period given.
+## Note: Test cases and docker image could not be implemented due to the short time period given.
 
 
 
