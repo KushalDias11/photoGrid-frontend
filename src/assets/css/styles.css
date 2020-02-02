@@ -57,3 +57,13 @@
     box-shadow: 0 0 5px #333;
     z-index: -1;
   }
+
+  .progress-bar-mid {
+    top: 200px;
+    position: relative;
+  }
+
+  .btn-adjust {
+    padding-left: 30px;
+    padding-top: 14px;
+  }

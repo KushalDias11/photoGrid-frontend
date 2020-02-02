@@ -174,7 +174,9 @@ class PhotoList extends React.Component {
                 {photos.fetchingList ||
                 photos.fetchingGrid ||
                 photos.photoList.length === 0 ? (
-                  <Progress animated value="100" />
+                  <span className="progress-bar-mid">
+                    <Progress animated value="100" />
+                  </span>
                 ) : (
                   <div
                     className="react-photo-gallery--gallery"
@@ -231,12 +233,13 @@ class PhotoList extends React.Component {
                   <div>
                     {this.state.itemsImage.length > 0 ? (
                       <React.Fragment>
-                        <h2>Selected Photos</h2>
+                        <h2>Selected Photos (Drag and drop as you want the order to be)</h2>
                         <SortableList
                           items={this.state.itemsImage}
                           onSortEnd={this.onSortEnd}
                           axis="xy"
                         />
+                        <span className="btn-adjust">
                         <Button
                           color="primary"
                           onClick={() =>
@@ -248,6 +251,8 @@ class PhotoList extends React.Component {
                         >
                           {this.getButtonText()}
                         </Button>
+                        </span>
+                        
                       </React.Fragment>
                     ) : null}
                   </div>
